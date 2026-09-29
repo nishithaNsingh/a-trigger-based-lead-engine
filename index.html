@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signals in, governed outreach drafts out | An idea for Brexy</title>
+<style>
+:root{--bg:#fff;--ink:#0e1a3a;--mute:#5b6480;--line:#e4e6ee;--navy:#0b1a4a;--navy2:#16276b;--amber:#f2b01e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif;padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+.w{max-width:860px;margin:0 auto;padding:0 22px}
+header{padding:64px 0 20px}
+.tag{font:600 13px/1 ui-monospace,Menlo,Consolas,monospace;color:#9a6a00;margin:0 0 18px}
+h1{font-size:clamp(34px,6vw,54px);line-height:1.05;letter-spacing:-.03em;margin:0 0 18px}
+.lede{font-size:19px;color:var(--mute);max-width:640px;margin:0}
+.sum{background:#eff3ff;border-left:4px solid var(--amber);border-radius:0 14px 14px 0;padding:22px 26px}.sum ul{margin:0;padding-left:20px}.sum li{margin:0 0 10px;max-width:660px}.sum li:last-child{margin:0}
+section{padding:34px 0}
+h2{font-size:clamp(26px,4vw,34px);letter-spacing:-.02em;line-height:1.15;margin:0 0 16px}
+.k{font:600 13px/1 ui-monospace,Menlo,Consolas,monospace;color:#9a6a00;margin:0 0 10px}
+p{margin:0 0 14px;max-width:680px}
+.fig{background:var(--navy);border-radius:18px;padding:18px;margin:8px 0 22px}
+.fig img{display:block;width:100%;height:auto;border-radius:10px;background:#fff}
+.ph{display:none;border:1.5px dashed #6d7bb8;border-radius:10px;padding:60px 20px;text-align:center;color:#c6cdea;font:14px ui-monospace,Menlo,Consolas,monospace}
+.fig figcaption{color:#c6cdea;font-size:14px;margin-top:12px}
+.steps{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.steps li{display:grid;grid-template-columns:150px 1fr;gap:6px 22px;padding:16px 0;border-bottom:1px solid var(--line)}
+.rules{margin:0;padding-left:20px}.rules li{margin:0 0 9px;max-width:660px}
+.lead{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:0 0 16px}
+.lead h3{margin:0 0 4px;font-size:19px}
+.lead .who{color:var(--mute);font-size:15px;margin:0 0 10px}
+.lead blockquote{margin:0 0 10px;padding-left:14px;border-left:3px solid var(--amber)}
+.small{font-size:14.5px;color:var(--mute)}
+a{color:var(--navy2)}a:focus-visible{outline:3px solid #7aa2ff;outline-offset:3px}
+.dec{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.dec div{border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.dec h3{margin:0 0 6px;font-size:17px}.dec p{font-size:15.5px;margin:0;color:var(--mute)}
+.pr{margin:0 0 16px;padding:0;list-style:none}.pr li{font-size:20px;font-weight:700;letter-spacing:-.01em;padding:10px 0;border-bottom:1px solid var(--line);max-width:560px}
+.end{border-left:4px solid var(--amber);padding:6px 0 6px 18px;font-size:20px;font-weight:600;line-height:1.4;max-width:640px;margin:8px 0 0}
+.sum b.s{font-weight:700}
+footer{padding:20px 0 50px;color:var(--mute);font-size:14.5px}
+@media(max-width:620px){.steps li{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="w">
+
+<header>
+  <p class="tag">An idea for Brexy</p>
+  <h1>Signals in, governed outreach drafts out</h1>
+  <p class="lede">Spot relevant finance signals, turn them into evidence-backed outreach drafts, and never send anything without human approval.</p>
+</header>
+
+<section>
+  <div class="sum">
+    <p class="k">The 30-second version</p>
+    <ul>
+      <li><b class="s">Find:</b> detect relevant finance signals, such as deals, listings, fund closes and new offices.</li>
+      <li><b class="s">Score:</b> prioritise companies by fit and by the strength of the trigger.</li>
+      <li><b class="s">Draft:</b> write a personalised first line from the verified signal.</li>
+      <li><b class="s">Guardrail:</b> check factual accuracy, tense, sourcing and generic language.</li>
+      <li><b class="s">Review:</b> a human approves or rejects every draft.</li>
+      <li><b class="s">Send:</b> approved drafts would go into an outreach and CRM setup (Instantly + HubSpot).</li>
+      <li><b class="s">Learn:</b> rejection reasons and later call feedback would improve future messaging.</li>
+    </ul>
+    <p class="small" style="margin:14px 0 0"><b>Nothing sends without a human click.</b></p>
+    <p class="small" style="margin:8px 0 0">Where this stands: it is an idea. The pipeline is not built yet. What exists today is a lead sheet I researched by hand with AI help, and the sample rows below come from it.</p>
+  </div>
+</section>
+
+<section>
+  <p class="k">The principle</p>
+  <h2>An unverifiable finding is a liability</h2>
+  <p>Brexy's product is built around that idea. I would apply the same principle to outbound:</p>
+  <ul class="pr">
+    <li>No source, no claim.</li>
+    <li>No verified trigger, no personalisation.</li>
+    <li>No human approval, no send.</li>
+  </ul>
+</section>
+
+<section>
+  <p class="k">Problem</p>
+  <h2>A plausible sentence can become a false claim</h2>
+  <p>In one sample row I reviewed, a draft congratulated a company on a <i>successful</i> IPO when the source only said it was <i>eyeing</i> one in two years.</p>
+  <p>The problem is not that AI cannot write an email. It is that a plausible-sounding sentence can quietly turn an uncertain event into a false claim, and a banker will notice.</p>
+</section>
+
+<section>
+  <p class="k">Architecture</p>
+  <h2>How it could work</h2>
+  <figure class="fig">
+    <img src="img.png" alt="Diagram: finance signals flow through research and source verification, fit scoring, drafting from verified evidence and a guardrail check to human review. Rejected drafts go back with a reason to regenerate. Approved drafts go to a CRM or Instantly draft, and a human sends. A dashed loop feeds rejection reasons and call notes back into the messaging rules." onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <div class="ph">Put your diagram here: save it as imp.png in the same folder as this file.</div>
+    <figcaption>Proposed flow. The dashed loop sends rejection reasons and call notes back into the messaging rules, separate from the main pipeline.</figcaption>
+  </figure>
+  <p><b>The guardrail step checks four things before a human sees a draft:</b></p>
+  <ul class="rules">
+    <li>Every claim has a source.</li>
+    <li>The tense matches the source ("plans" never becomes "completed").</li>
+    <li>The trigger is specific and dated.</li>
+    <li>No vague AI language.</li>
+  </ul>
+  <p class="small">Each check has its own failure message, so when a draft fails, the log names the rule.</p>
+</section>
+
+<section>
+  <p class="k">Example</p>
+  <h2>What a lead row could look like</h2>
+  <div class="lead">
+    <h3>IFM Investors</h3>
+    <p class="who">Hiran Wanigasekera, Executive Director and Co-Head of Asia-Pacific Diversified Credit</p>
+    <blockquote>Saw IFM just opened in Singapore to originate and execute private credit deals directly, expanding its diversified credit capabilities across Asia.</blockquote>
+    <p class="small">Why Brexy: a new local team needs fast screening memos on unfamiliar borrowers <a href="https://fundselectorasia.com/ifm-investors-opens-singapore-office/">Source</a></p>
+  </div>
+  <div class="lead">
+    <h3>ARC Group</h3>
+    <p class="who">Nigel Wong, Head of Asset &amp; Wealth Management, Hong Kong</p>
+    <blockquote>Saw ARC is putting nearly US$100m of its own capital into pre-IPO, structured and special-situation deals in Hong Kong, on top of the advisory and SPAC business.</blockquote>
+    <p class="small">Why Brexy: a cross-border bank running a principal book and an advisory book needs memos for both. <a href="https://arc-group.com/arc-group-ramps-up-hk-asset-management-arm/">Source</a></p>
+  </div>
+  <p class="small">Two rows from the lead sheet, built from the cited public sources. Titles are as stated in those articles.</p>
+</section>
+
+<section>
+  <p class="k">Decisions</p>
+  <h2>Why I would build it this way</h2>
+  <div class="dec">
+    <div><h3>Human gate over auto-send</h3><p>A banker will notice one bad email. A person approves every message, and reject reasons get logged.</p></div>
+    <div><h3>Rules over tone prompts</h3><p>"Sound human" decays as prompts grow. Explicit rules can be tested and can name the reason they failed.</p></div>
+    <div><h3>Feedback kept separate</h3><p>Rejections and call notes update the rules on a loop of their own, so the main pipeline stays simple.</p></div>
+  </div>
+</section>
+
+<section>
+  <p class="end">Sheet before automation. If the manual version does not earn replies, automating it only makes the mistake faster.</p>
+</section>
+
+<footer>Nishitha Singh N </footer>
+
+</div>
+</body>
+</html>
